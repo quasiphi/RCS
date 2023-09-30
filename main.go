@@ -40,7 +40,7 @@ func main() {
 
 	http.HandleFunc("/", handler)
 
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServeTLS(":5000", "cert.pem", "cert.key", nil))
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {

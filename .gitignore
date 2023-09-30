@@ -2,3 +2,5 @@
 config.json
 .env
 cache/
+cert.key
+cert.pem
